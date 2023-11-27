@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92011784-4C9C-1C56-9E87-4A7C4103F9EF" name="Zajęte_miejsce">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>AEB489F4-38C7-D313-95F8-085A461A00FA</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<ordsAlias>zajete_miejsce</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Ilość_materiału" id="ABE73468-CBBE-6630-789D-FC4EC57CBDF4">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>180065DF-3964-C68C-D3E1-8B309DBBD67E</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zamówienie_materiału_Numer_zamówienia" id="9EB25306-79F0-AA69-92CB-65A8854E310B">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>D81AAD57-3241-D4A5-114A-B7536CAF4AC3</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ECF991E-4631-E986-62D3-3CF6687C1B87" referredColumn="1ECE79EF-A6C7-E0BA-1D4D-311E1F6D4498"/>
+</associations>
+</Column>
+<Column name="Miejsce_w_Magazynie_Numer_alejki" id="56781E24-714F-CA2E-7239-60A47374AA8C">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>B911DFF8-62E8-842A-BB5F-C66F07F3A2DF</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08BF0BDE-6844-D15A-1B19-3AAB22DE9C7D" referredColumn="67CEFF84-B326-86D4-7635-E8CDF209ED84"/>
+</associations>
+</Column>
+<Column name="Miejsce_w_Magazynie_Numer_miejsca" id="44272AF4-2FF4-D6CB-E60D-56748DE6E9FE">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>EA1CBC3B-712F-43C6-9034-84EFBF2DD309</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08BF0BDE-6844-D15A-1B19-3AAB22DE9C7D" referredColumn="5A895898-4510-6FF4-3069-9EA23784A0A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9F604EF-F5F5-C8EB-ACE2-DCB9885CF8A7" name="Zajęte_miejsce_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>346551D1-75E2-4CD8-2A90-4136D56ADC62</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EB25306-79F0-AA69-92CB-65A8854E310B"/>
+<colUsage columnID="56781E24-714F-CA2E-7239-60A47374AA8C"/>
+<colUsage columnID="44272AF4-2FF4-D6CB-E60D-56748DE6E9FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0B6E0D4-3FB1-1BB5-E4DD-02CD40513950" name="Zajęte_miejsce_Zamówienie_materiału_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>4CB7C4B8-C9CD-D74C-0A97-B9E987B53A89</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EB25306-79F0-AA69-92CB-65A8854E310B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB1CF509-ECD8-EB03-87DE-0F223081AE15" name="Zajęte_miejsce_Miejsce_w_Magazynie_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>44422CCD-0B94-64B0-F8E9-87C879E6F924</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56781E24-714F-CA2E-7239-60A47374AA8C"/>
+<colUsage columnID="44272AF4-2FF4-D6CB-E60D-56748DE6E9FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

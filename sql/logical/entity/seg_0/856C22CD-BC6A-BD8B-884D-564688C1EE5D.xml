@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="856C22CD-BC6A-BD8B-884D-564688C1EE5D" name="Linia produkcyjna">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-05 20:23:45 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Numer linni produkcyjnej" id="61665256-A01C-F93C-50D3-0D09CC3BC2B1">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:44:36 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Szybkość produkcji (partii na dzień)" id="5CDA36D2-EA43-51EB-81B9-3984AA2E29C7">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:46:07 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pesel" id="2866D100-AEEE-8DA7-D37C-97508E618B23">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-27 15:48:24 UTC</createdTime>
+<generatorID>8F72BFCA-9220-31E4-33F3-02766CD29710</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<referedAttribute>B0B7FB13-E70B-7095-760D-B40D9539CC63</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FF63C30B-84C1-E163-0B58-2E2BE028004B" name="Linia_produkcyjna_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:45:03 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>61665256-A01C-F93C-50D3-0D09CC3BC2B1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

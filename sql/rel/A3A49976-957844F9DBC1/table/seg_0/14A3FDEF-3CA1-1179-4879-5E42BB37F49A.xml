@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14A3FDEF-3CA1-1179-4879-5E42BB37F49A" name="Miejsce_w_Magazynie">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>264DF103-E96F-FBF4-4C07-CC07108C6145</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numer_alejki" id="67CEFF84-B326-86D4-7635-E8CDF209ED84">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>2CD02C80-E182-E89C-D0DB-9A85F01BB20F</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_miejsca" id="5A895898-4510-6FF4-3069-9EA23784A0A6">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>FFDD7C5E-DDEF-5479-6EBF-0D45B2534F2F</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stan_miejsca" id="E6D0A392-F26A-1EBB-D693-6D77FCB32B6B">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>1CA8F71E-36D8-9275-3E07-A0C876937184</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="134FE162-C94F-222C-1E60-E60925E7E250" name="Miejsce_w_Magazynie_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>8B3EB32D-F82B-280D-0C2C-5BEA9096F40B</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67CEFF84-B326-86D4-7635-E8CDF209ED84"/>
+<colUsage columnID="5A895898-4510-6FF4-3069-9EA23784A0A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

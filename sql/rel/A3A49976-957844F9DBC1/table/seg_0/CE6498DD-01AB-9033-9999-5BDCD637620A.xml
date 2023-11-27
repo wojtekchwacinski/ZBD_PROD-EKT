@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE6498DD-01AB-9033-9999-5BDCD637620A" name="Przypisane_linni_produkcyjnej">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>92F8BF3E-DAAC-3FEE-DF76-219757FFCFFA</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Zamówienie_Numer_zamówienia" id="47C1970B-47BD-137C-ED17-6170DE092F0F">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>706F3C51-7031-9F85-0D30-CFC1C71A2C83</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="460F65AA-CF35-E673-5A46-856E9DB3B78C" referredColumn="434BA6AB-C8DE-AC4F-2D83-ACEA16A52444"/>
+</associations>
+</Column>
+<Column name="Linia_produkcyjna_Numer_linni_produkcyjnej" id="0C9CFB93-9267-3B77-6B01-1D60BE188190">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>1FE85B36-4859-2852-28B0-4445E89D942B</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CC7AB6D-358C-5A25-BB92-9A2B9B992A77" referredColumn="C9D10CEA-4611-2543-ED39-D529DD9E360D"/>
+</associations>
+</Column>
+<Column name="Data_zajęcia" id="794F8261-EF5B-A817-D4F5-332A4CC86DAA">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>A3D5E407-B640-499A-83A1-69E02684E50B</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_zwolnienia" id="0AD593ED-3179-66A5-A80B-B81BF2AB4666">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>5994D417-123F-A5F7-4164-EFD2371363D6</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29A1C59C-06CD-CF8F-E1EC-914BF38C2309" name="Przypisane_linni_produkcyjnej_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>00B3F817-057F-8508-A535-8675AD91E34C</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47C1970B-47BD-137C-ED17-6170DE092F0F"/>
+<colUsage columnID="0C9CFB93-9267-3B77-6B01-1D60BE188190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="984F224C-44B5-E367-DFAC-6A47C024029C" name="Przypisane_linni_produkcyjnej_Zamówienie_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>AC7F3E06-287F-A7A8-9B74-A5804B2C0AA5</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47C1970B-47BD-137C-ED17-6170DE092F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37797E4C-6109-EC04-9473-D6F4E4E92BE2" name="Przypisane_linni_produkcyjnej_Linia_produkcyjna_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>8418927D-B2C8-850A-71F2-2E42CC99CBD3</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C9CFB93-9267-3B77-6B01-1D60BE188190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

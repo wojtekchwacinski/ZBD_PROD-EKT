@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="820F274E-38FA-DE0C-0C03-1892816454A4" name="Materiał">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-05 20:05:26 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nazwa materiału" id="6FC161F1-8372-CF5A-6E86-960E57E936CA">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:24:26 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="59401F78-2808-AC83-E9C7-58B7B16786C9" name="Materiał PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:24:22 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6FC161F1-8372-CF5A-6E86-960E57E936CA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

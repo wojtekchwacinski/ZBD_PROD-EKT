@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC061AF3-6CEE-B9CD-3EE1-5575FCD5330A" name="Pracownik">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-05 20:26:40 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Pesel" id="B0B7FB13-E70B-7095-760D-B40D9539CC63">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:50:31 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Imie" id="5E220BA4-EB67-9C98-FF9C-299BDBB89579">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:50:32 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwisko" id="921E752C-FAD4-3BF5-69AD-9DF675CCE74F">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:50:32 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data zatrudnienia" id="A44BD1C3-F399-C19D-FB1A-785C17ED616D">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:50:32 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numer konta" id="E2CD393D-2150-A109-1E62-ED2C3E8757D1">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 17:11:37 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>26</dataTypePrecision>
+<ownDataTypeParameters>,26,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Stanowisko Nazwa" id="5AB51D83-FEC3-B592-B294-785FAA666EC4">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 17:33:13 UTC</createdTime>
+<generatorID>B5FFB02C-D2C2-EB0A-42B5-3DC6E0CF02E9</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<referedAttribute>8F073B67-AE93-5D42-29CA-19B14E0A525E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kod pocztowy" id="DFD6209F-964C-8DC3-4F04-7E68372FFD2A">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 17:51:59 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ulica" id="24BC1F25-C807-76F4-CF84-BF3639F804A2">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 17:51:59 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numer budynku" id="C4668309-A5E6-A247-1018-277D4E1B0B72">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 17:51:59 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Miasto" id="D24B7D70-D84D-27CB-3075-53C336AA8759">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 17:51:59 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kraj" id="4782F3B9-A7D7-F98B-AE30-907C2793FE8D">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 17:51:59 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B2EB3A4D-7960-F204-0601-9BA133F8B849" name="Pracownik_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:50:53 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B0B7FB13-E70B-7095-760D-B40D9539CC63</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

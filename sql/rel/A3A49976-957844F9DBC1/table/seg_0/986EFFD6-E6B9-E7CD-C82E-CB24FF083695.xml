@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="986EFFD6-E6B9-E7CD-C82E-CB24FF083695" name="Pracownik">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>FC061AF3-6CEE-B9CD-3EE1-5575FCD5330A</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pesel" id="ECAA1882-DB80-C151-D2C5-0E771CD039A4">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>B0B7FB13-E70B-7095-760D-B40D9539CC63</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="D62DE4D2-0A8F-ABCC-7026-362CFB0907D9">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>5E220BA4-EB67-9C98-FF9C-299BDBB89579</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="6727E287-3CAC-519C-5F51-55C5E4ED269C">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>921E752C-FAD4-3BF5-69AD-9DF675CCE74F</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_zatrudnienia" id="DF3617F9-9F55-EDFD-2399-52B377BD5470">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>A44BD1C3-F399-C19D-FB1A-785C17ED616D</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_konta" id="DC0D70A4-9F57-801B-97A4-E9E12F29443D">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>E2CD393D-2150-A109-1E62-ED2C3E8757D1</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>26</dataTypePrecision>
+<ownDataTypeParameters>,26,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stanowisko_Nazwa" id="85BA82F5-F95A-3DA3-0943-CDCAEB5ECFA4">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>5AB51D83-FEC3-B592-B294-785FAA666EC4</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5716BFE5-2B6A-F374-84EB-9F16E1A5F86F" referredColumn="1CDE5D6F-9FCE-3559-C7F9-A84D018157BA"/>
+</associations>
+</Column>
+<Column name="Kod_pocztowy" id="90335496-ECE5-4F4D-380C-42465B799E8F">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>DFD6209F-964C-8DC3-4F04-7E68372FFD2A</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ulica" id="CCA49ED3-703D-0AA1-0BC6-1527793A722B">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>24BC1F25-C807-76F4-CF84-BF3639F804A2</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_budynku" id="6E430D06-F18E-E273-9274-DF0787C1C08C">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>C4668309-A5E6-A247-1018-277D4E1B0B72</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Miasto" id="7473C244-A79F-5A8F-B926-13C7C2D57A5A">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>D24B7D70-D84D-27CB-3075-53C336AA8759</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kraj" id="094E85D0-156A-5C84-B5E2-D65852E7CD00">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>4782F3B9-A7D7-F98B-AE30-907C2793FE8D</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Linia_produkcyjna_Numer_linni_produkcyjnej" id="8B18A5DD-C738-08E0-7083-B3145A931B52">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>69650743-2CCA-7B04-E7E9-CAC9353015E0</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3919F826-8B55-362D-D19E-5EA5EB224E7F" referredColumn="C9D10CEA-4611-2543-ED39-D529DD9E360D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A1AA118-0C37-2848-E387-C0E1A4FA7CC5" name="Pracownik_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>B2EB3A4D-7960-F204-0601-9BA133F8B849</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECAA1882-DB80-C151-D2C5-0E771CD039A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE0C3645-7D25-AF03-50FD-7DDCADC523AE" name="Pracownik_Stanowisko_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>B5FFB02C-D2C2-EB0A-42B5-3DC6E0CF02E9</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85BA82F5-F95A-3DA3-0943-CDCAEB5ECFA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8E56AD1-5128-C55E-CD10-2F9E844E6676" name="Pracownik_Linia_produkcyjna_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>8F72BFCA-9220-31E4-33F3-02766CD29710</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B18A5DD-C738-08E0-7083-B3145A931B52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

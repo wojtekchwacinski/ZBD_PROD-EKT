@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="08BF0BDE-6844-D15A-1B19-3AAB22DE9C7D" containerWithKeyObject="92011784-4C9C-1C56-9E87-4A7C4103F9EF" localFKIndex="CB1CF509-ECD8-EB03-87DE-0F223081AE15" name="Zajęte_miejsce_Miejsce_w_Magazynie_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>44422CCD-0B94-64B0-F8E9-87C879E6F924</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<referredTableLongName>Miejsce_w_Magazynie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>14A3FDEF-3CA1-1179-4879-5E42BB37F49A</referredTableID>
+<keyObject>134FE162-C94F-222C-1E60-E60925E7E250</keyObject>
+<referredKeyID>134FE162-C94F-222C-1E60-E60925E7E250</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Numer_alejki,Numer_miejsca</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

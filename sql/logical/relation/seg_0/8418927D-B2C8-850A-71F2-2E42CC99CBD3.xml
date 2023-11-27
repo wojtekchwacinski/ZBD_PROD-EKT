@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Przypisane linni produkcyjnej Linia produkcyjna FK" directorySegmentName="seg_0" id="8418927D-B2C8-850A-71F2-2E42CC99CBD3">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:30:57 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<sourcePk>00B3F817-057F-8508-A535-8675AD91E34C</sourcePk>
+<targetPk>FF63C30B-84C1-E163-0B58-2E2BE028004B</targetPk>
+<identifying>true</identifying>
+<nameOnSource>określa</nameOnSource>
+<nameOnTarget>jest określana przez</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>92F8BF3E-DAAC-3FEE-DF76-219757FFCFFA</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>856C22CD-BC6A-BD8B-884D-564688C1EE5D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

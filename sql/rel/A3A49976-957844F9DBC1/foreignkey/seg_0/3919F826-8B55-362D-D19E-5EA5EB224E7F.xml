@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3919F826-8B55-362D-D19E-5EA5EB224E7F" containerWithKeyObject="986EFFD6-E6B9-E7CD-C82E-CB24FF083695" localFKIndex="B8E56AD1-5128-C55E-CD10-2F9E844E6676" name="Pracownik_Linia_produkcyjna_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>8F72BFCA-9220-31E4-33F3-02766CD29710</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<referredTableLongName>Linia_produkcyjna</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DC009609-77AF-D963-0F6B-2F76DFE1322B</referredTableID>
+<keyObject>039E4ECA-A6E4-2F88-C479-92B78B653714</keyObject>
+<referredKeyID>039E4ECA-A6E4-2F88-C479-92B78B653714</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>Numer_linni_produkcyjnej</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

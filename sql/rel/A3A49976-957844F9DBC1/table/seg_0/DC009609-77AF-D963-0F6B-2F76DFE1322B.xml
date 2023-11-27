@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC009609-77AF-D963-0F6B-2F76DFE1322B" name="Linia_produkcyjna">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>856C22CD-BC6A-BD8B-884D-564688C1EE5D</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numer_linni_produkcyjnej" id="C9D10CEA-4611-2543-ED39-D529DD9E360D">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>61665256-A01C-F93C-50D3-0D09CC3BC2B1</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Szybkość_produkcji_(partii_na_dzień)" id="69F42466-1393-0CDA-CF29-AF0F18687139">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>5CDA36D2-EA43-51EB-81B9-3984AA2E29C7</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="039E4ECA-A6E4-2F88-C479-92B78B653714" name="Linia_produkcyjna_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>FF63C30B-84C1-E163-0B58-2E2BE028004B</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9D10CEA-4611-2543-ED39-D529DD9E360D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

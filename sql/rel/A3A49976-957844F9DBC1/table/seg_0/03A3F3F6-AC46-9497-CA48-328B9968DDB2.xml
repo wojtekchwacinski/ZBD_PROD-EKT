@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03A3F3F6-AC46-9497-CA48-328B9968DDB2" name="Zamówienie_materiału">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>52E6AA78-4044-7636-BAD8-DBF623DB9488</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<ordsAlias>zamowienie_materialu</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numer_zamówienia" id="1ECE79EF-A6C7-E0BA-1D4D-311E1F6D4498">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>A39CE39A-516C-206F-872F-1DCA348A460C</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_zakupu_materiału" id="1B7E129A-166D-7B67-3894-AD0F894B2D3C">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>BB058EB7-3917-269F-5CB6-BF7D30FED133</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ilość" id="7E52DC69-4F6A-7A66-B41B-00121F76EE98">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>C59DBB00-4740-CE99-1C63-D659C174C180</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dostawca_materiału_Nazwa_dostawcy" id="A2F041BF-39CA-4FD6-B1A5-F90776E1AE1A">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>43839BB4-4FF3-3471-4B61-8E5C7A0FBAAD</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C02EF5CB-F258-1BE3-7F41-B95B7A958BB3" referredColumn="9D2DBC1D-46DA-2284-6CD3-AAB0107959D8"/>
+</associations>
+</Column>
+<Column name="Materiał_Nazwa_materiału" id="640CD103-3C74-1323-3EA3-C957E19E5467">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>95DCB765-FDA7-37EA-19F9-5F1E618618AF</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE38C0BD-3AED-E4D2-8EF6-C82F8D9D6098" referredColumn="2F9AD471-47A7-219B-185F-331D05ABBEFD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFB9660A-83C2-3D96-5AA6-DF3D0822F58C" name="Zamówienie_materiału_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>321D0840-A303-C7FC-BA57-1D081421838A</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ECE79EF-A6C7-E0BA-1D4D-311E1F6D4498"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A24448B-E138-4E26-5B80-C428848F5AE5" name="Zamówienie_materiału_Dostawca_materiału_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>6F7D2CEF-E724-6044-3119-6C269991BBB1</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2F041BF-39CA-4FD6-B1A5-F90776E1AE1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97DF7B06-49B9-F8BB-F59C-DFF8E1393402" name="Zamówienie_materiału_Materiał_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>BFC8C322-FFE5-BCFA-D37C-971C4D6234D8</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="640CD103-3C74-1323-3EA3-C957E19E5467"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

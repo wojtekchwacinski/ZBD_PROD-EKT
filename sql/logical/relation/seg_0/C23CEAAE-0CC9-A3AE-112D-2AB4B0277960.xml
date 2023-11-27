@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Wymagany materiał Materiał FK" directorySegmentName="seg_0" id="C23CEAAE-0CC9-A3AE-112D-2AB4B0277960">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:10:58 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<sourcePk>59401F78-2808-AC83-E9C7-58B7B16786C9</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>określa</nameOnSource>
+<nameOnTarget>jest określany przez</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>820F274E-38FA-DE0C-0C03-1892816454A4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6866A037-67CD-E3AE-57C7-54980346CF00</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

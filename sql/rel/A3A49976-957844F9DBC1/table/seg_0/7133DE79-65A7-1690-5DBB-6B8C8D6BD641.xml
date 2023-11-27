@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7133DE79-65A7-1690-5DBB-6B8C8D6BD641" name="Zamówiony_typ_produktu">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>70F6682A-A8A1-CB9A-B361-C9F2674AC415</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<ordsAlias>zamowiony_typ_produktu</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Ilość" id="76719B5F-1D00-298B-1AC9-E5804A00750A">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>998A48A6-5749-96AA-7D56-BDD7A3A0F058</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Produkt_Nazwa_produktu" id="91C4AAB8-9B4B-68C9-E12D-AB3F09FE5AD0">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>3DCDF164-D1D4-408B-9D5C-AB16F3F702A6</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EEF34CDD-64BF-35CD-BDE3-A6FCFCAAA399" referredColumn="510C2FDE-7362-D69F-2F10-69A0A9BB9440"/>
+</associations>
+</Column>
+<Column name="Zamówienie_Numer_zamówienia" id="847EF49F-3FC3-843A-9EBE-53C8146EB778">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>61ADE258-0128-6674-CFA4-B28642BC98E8</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D40FE25-F7A0-3C9A-D499-A3629677701F" referredColumn="434BA6AB-C8DE-AC4F-2D83-ACEA16A52444"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA9307DA-703B-F271-048E-B994953F50F9" name="Zamówiony_typ_produktu_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>C926EE29-1558-9786-6C64-AF879351C564</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="847EF49F-3FC3-843A-9EBE-53C8146EB778"/>
+<colUsage columnID="91C4AAB8-9B4B-68C9-E12D-AB3F09FE5AD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="644EEFCD-CA1D-CC00-682D-B5454555216C" name="Zamówiony_typ_produktu_Zamówienie_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>53A57B02-7197-A27C-D925-3A11855B5182</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="847EF49F-3FC3-843A-9EBE-53C8146EB778"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69990B47-4475-4B4B-D706-61D758E607ED" name="Zamówiony_typ_produktu_Produkt_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>CEB70C89-DDEE-E949-4438-88982AF59BDB</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91C4AAB8-9B4B-68C9-E12D-AB3F09FE5AD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

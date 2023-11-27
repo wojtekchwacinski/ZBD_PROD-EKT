@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Zamówienie materiału Dostawca materiału FK" directorySegmentName="seg_0" id="6F7D2CEF-E724-6044-3119-6C269991BBB1">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:01:27 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<sourcePk>147CEF32-B3D1-87D9-EBF2-B74F82149E3D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>realizuję</nameOnSource>
+<nameOnTarget>jest realizowane</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E85D1931-22EF-C211-60C6-9F7A05A6D57C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>52E6AA78-4044-7636-BAD8-DBF623DB9488</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8A7681E-A5A6-2CA6-0764-64E3478EBE7B" name="Zamówienie">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>6D250C8E-E351-D58B-0D9E-9FD0EFA58C85</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<ordsAlias>zamowienie</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numer_zamówienia" id="434BA6AB-C8DE-AC4F-2D83-ACEA16A52444">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>455414AB-1CDB-3D5D-D85F-F75B32A6EB9D</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_zamówienia" id="58B454B7-8E39-7D3D-B018-8CD6FD57F348">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>28327BC2-DC65-C789-9278-42520589C3E4</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Klient_Nazwa_firmy" id="2EC841DF-A615-DCF1-A240-65903E9DE9B9">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>6CC162C9-18A0-A9DD-A493-9F284467F5EF</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9BBC5F2-9196-A587-9FA2-BB1E51BD6833" referredColumn="AF625DEE-FEE2-9522-EA3F-E60D62550623"/>
+</associations>
+</Column>
+<Column name="Cena_zamówienia" id="866E6027-669B-8FEF-F23F-E4CAB486B040">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>BC77296C-2E90-40DE-A56B-71D56455621B</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przewidywana_data_realizacji" id="FDBD09AB-AFCB-4B63-A60C-7BBC4E87B0BA">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>BEE2F7DA-79BE-E5F5-FB15-36120ADC9F7F</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stan_zamówienia_Stan" id="1B4A6C6F-91F4-D1E6-32F6-B94CA8D08E48">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>5515EA4A-1950-34C0-9DFA-29CD130D93FF</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02CE0E16-A6FF-40AD-C59B-201BC76C0225" referredColumn="4A075352-105E-8ADD-7833-1360FB3FD592"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D216C07A-0506-CD7E-3A0C-039BAC521405" name="Zamówienie_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>FB55FE6A-DEC6-35C0-1C6F-D4B4ED36ED24</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="434BA6AB-C8DE-AC4F-2D83-ACEA16A52444"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37B0C195-A73A-92DF-13AB-608CDE857659" name="Zamówienie_Stan_zamówienia_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>498F0975-BD2E-CA9A-7A9B-39C9A9D78592</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B4A6C6F-91F4-D1E6-32F6-B94CA8D08E48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10704ACD-DC28-39A3-8E69-CABDC27CBA91" name="Zamówienie_Klient_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>0CD368A3-6F7A-A9E0-E8B5-0B18D3EB764B</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EC841DF-A615-DCF1-A240-65903E9DE9B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

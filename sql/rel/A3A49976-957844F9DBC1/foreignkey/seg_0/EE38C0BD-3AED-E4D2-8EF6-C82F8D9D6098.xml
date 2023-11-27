@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EE38C0BD-3AED-E4D2-8EF6-C82F8D9D6098" containerWithKeyObject="03A3F3F6-AC46-9497-CA48-328B9968DDB2" localFKIndex="97DF7B06-49B9-F8BB-F59C-DFF8E1393402" name="Zamówienie_materiału_Materiał_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-21 19:42:27 UTC</createdTime>
+<generatorID>BFC8C322-FFE5-BCFA-D37C-971C4D6234D8</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<referredTableLongName>Materiał</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>43017580-9F63-DC31-B6D0-50C2B2DF7A02</referredTableID>
+<keyObject>22C63B87-F8EB-1663-A14B-DAAB6DA0D35F</keyObject>
+<referredKeyID>22C63B87-F8EB-1663-A14B-DAAB6DA0D35F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Nazwa_materiału</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

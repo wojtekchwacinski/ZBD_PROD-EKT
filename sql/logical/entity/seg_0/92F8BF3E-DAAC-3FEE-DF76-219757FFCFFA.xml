@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92F8BF3E-DAAC-3FEE-DF76-219757FFCFFA" name="Przypisane linni produkcyjnej">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:24:18 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Zamówienie Numer zamówienia" id="706F3C51-7031-9F85-0D30-CFC1C71A2C83">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:29:51 UTC</createdTime>
+<generatorID>AC7F3E06-287F-A7A8-9B74-A5804B2C0AA5</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<referedAttribute>455414AB-1CDB-3D5D-D85F-F75B32A6EB9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Linia produkcyjna Numer linni produkcyjnej" id="1FE85B36-4859-2852-28B0-4445E89D942B">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:32:13 UTC</createdTime>
+<generatorID>8418927D-B2C8-850A-71F2-2E42CC99CBD3</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<referedAttribute>61665256-A01C-F93C-50D3-0D09CC3BC2B1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data zajęcia" id="A3D5E407-B640-499A-83A1-69E02684E50B">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:37:11 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data zwolnienia" id="5994D417-123F-A5F7-4164-EFD2371363D6">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:37:27 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="220FB078-D216-AAB3-07E0-F10FB6F742BC">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-27 15:48:24 UTC</createdTime>
+<generatorID>3D77B9F2-E14C-7FB9-FF31-A9FFECFD6249</generatorID>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="00B3F817-057F-8508-A535-8675AD91E34C" name="Przypisane_linni_produkcyjnej_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 18:30:10 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>706F3C51-7031-9F85-0D30-CFC1C71A2C83</attributeRef>
+<attributeRef>1FE85B36-4859-2852-28B0-4445E89D942B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

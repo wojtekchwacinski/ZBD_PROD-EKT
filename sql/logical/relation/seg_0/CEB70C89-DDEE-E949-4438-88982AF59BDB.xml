@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Zamówiony typ produktu Produkt FK" directorySegmentName="seg_0" id="CEB70C89-DDEE-E949-4438-88982AF59BDB">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-06 16:20:18 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<sourcePk>BDD2FFE9-7343-FB66-54FA-B5533DCBA5EA</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>wchodzi w skład</nameOnSource>
+<nameOnTarget>dotyczy</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0B073131-6F93-AB4B-B8C6-63FE54CE28BF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>70F6682A-A8A1-CB9A-B361-C9F2674AC415</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

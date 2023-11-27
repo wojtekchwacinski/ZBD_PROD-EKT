@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Zamówienie Stan zamówienia FK" directorySegmentName="seg_0" id="498F0975-BD2E-CA9A-7A9B-39C9A9D78592">
+<createdBy>wojci</createdBy>
+<createdTime>2023-11-13 17:41:54 UTC</createdTime>
+<ownerDesignName>sql</ownerDesignName>
+<engineerTo>
+<item key="A3A49976-83C8-70D5-8051-957844F9DBC1" value="true"/>
+</engineerTo>
+<sourcePk>FB55FE6A-DEC6-35C0-1C6F-D4B4ED36ED24</sourcePk>
+<targetPk>9C2A642C-6F31-BE75-C964-6ABAAF8DB94D</targetPk>
+<identifying>false</identifying>
+<nameOnSource>jest określane</nameOnSource>
+<nameOnTarget>określa</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6D250C8E-E351-D58B-0D9E-9FD0EFA58C85</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>8140E00B-7B49-3610-A265-F7594D547725</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
