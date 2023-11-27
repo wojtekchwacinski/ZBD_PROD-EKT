@@ -1,0 +1,15 @@
+funkcje 
+oblicznie wartosci dodadku po starzu pracy 
+obliczanie całkowitego kosztu produkcji 
+
+sekwencje
+sekwencje do numeru zamówienia do i od nas (dwie sekwencje) 
+numerów lini produkcyjnych 
+sekwencje do miesc w magazynie 
+
+procedura 
+złożenia zamówienia
+dodania nowego produktu 
+
+
+napisać ddl 
