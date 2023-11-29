@@ -40,24 +40,25 @@ CREATE TABLE material (
 
 --6.TABELKA MIEJSCE_w_MAGAZYNIE
 CREATE TABLE miejsce_w_magazynie (
-    numer_alejki  NUMBER(10) PRIMARY KEY,
-    numer_miejsca NUMBER(10) PRIMARY KEY,
-    stan_miejsca  CHAR(1) NOT NULL
+    numer_alejki  NUMBER(10),
+    numer_miejsca NUMBER(10),
+    stan_miejsca  CHAR(1) NOT NULL,
+	CONSTRAINT pKeyMagazyn PRIMARY KEY(numer_alejki, numer_miejsca)
 );
 
 --7.TABLEKA 
 CREATE TABLE pracownik (
-    pesel                                      NUMBER(11) PRIMARY KEY,
-    imie                                       VARCHAR2(50) NOT NULL,
-    nazwisko                                   VARCHAR2(50) NOT NULL,
-    data_zatrudnienia                          DATE NOT NULL,
-    numer_konta                                NUMBER(26) NOT NULL,
-    nazwa_stanowiska                           VARCHAR2(50) REFERENCES stanowisko(nazwa) NOT NULL,
-    kod_pocztowy                               VARCHAR2(6) NOT NULL,
-    ulica                                      VARCHAR2(50) NOT NULL,
-    numer_budynku                              NUMBER(4) NOT NULL,
-    miasto                                     VARCHAR2(50) NOT NULL,
-    kraj                                       VARCHAR2(50) NOT NULL, 
+    pesel                              NUMBER(11) PRIMARY KEY,
+    imie                               VARCHAR2(50) NOT NULL,
+    nazwisko                           VARCHAR2(50) NOT NULL,
+    data_zatrudnienia                  DATE NOT NULL,
+    numer_konta                        NUMBER(26) NOT NULL,
+    nazwa_stanowiska                   VARCHAR2(50) REFERENCES stanowisko(nazwa) NOT NULL,
+    kod_pocztowy                       VARCHAR2(6) NOT NULL,
+    ulica                              VARCHAR2(50) NOT NULL,
+    numer_budynku                      NUMBER(4) NOT NULL,
+    miasto                             VARCHAR2(50) NOT NULL,
+    kraj                               VARCHAR2(50) NOT NULL, 
     przypisana_linia 			       NUMBER(10) REFERENCES linia_produkcyjna(numer_linni_produkcyjnej) NOT NULL
 );
 
@@ -71,10 +72,11 @@ CREATE TABLE produkt (
 
 --9.TABELKA PRZYPISANIE_LINNI_PRODUKCYJNEJ
 CREATE TABLE przypisane_linni_produkcyjnej (
-    numer_zamowienia                	       NUMBER(10) REFERENCES zamowienie(numer_zamowienia) PRIMARY KEY, 
-    numer_linni                                NUMBER(10) REFERENCES linia_produkcyjna(numer_linni_produkcyjnej) PRIMARY KEY,
+    numer_zamowienia                	       NUMBER(10) REFERENCES zamowienie(numer_zamowienia), 
+    numer_linni                                NUMBER(10) REFERENCES linia_produkcyjna(numer_linni_produkcyjnej),
     data_zajęcia                               DATE NOT NULL,
-    data_zwolnienia                            DATE NOT NULL
+    data_zwolnienia                            DATE NOT NULL,
+	CONSTRAINT pKeyPrypLinProd PRIMARY KEY(numer_zamowienia, numer_linni)
 );
 
 --10.TABELKA STAN_ZAMÓWIENIA
@@ -92,16 +94,18 @@ CREATE TABLE stanowisko (
 --12.TABELKA WYMAGANY_MATERIAŁ
 CREATE TABLE wymagany_material (
     ilosc_materialu          NUMBER(5) NOT NULL,
-    nazwa_materialu          VARCHAR2(50) REFERENCES material(nazwa_materialu) PRIMARY KEY,
-    nazwa_produktu           VARCHAR2(50) REFERENCES produkt(nazwa_produktu) PRIMARY KEY
+    nazwa_materialu          VARCHAR2(50) REFERENCES material(nazwa_materialu),
+    nazwa_produktu           VARCHAR2(50) REFERENCES produkt(nazwa_produktu),
+	CONSTRAINT pKeyWymMater PRIMARY KEY(nazwa_produktu, nazwa_materialu)
 );
 
 --13.TABELKA ZAJĘTY_MIEJSCE
 CREATE TABLE zajete_miejsce (
     ilosc_materialu                       NUMBER(10) NOT NULL, 
-    numer_zamowienia                      NUMBER(10) REFERENCES zamowienie_materialu(numer_zamowienia) PRIMARY KEY,  
-    numer_alejki                          NUMBER(10) REFERENCES miejsce_w_magazynie(numer_alejki) PRIMARY KEY,  
-    numer_miejsca                         NUMBER(10) REFERENCES miejsce_w_magazynie(numer_miejsca) PRIMARY KEY
+    numer_zamowienia                      NUMBER(10) REFERENCES zamowienie_materialu(numer_zamowienia),  
+    numer_alejki                          NUMBER(10) REFERENCES miejsce_w_magazynie(numer_alejki),  
+    numer_miejsca                         NUMBER(10) REFERENCES miejsce_w_magazynie(numer_miejsca),
+	CONSTRAINT pKeyZajMiejsca PRIMARY KEY(numer_zamowienia, numer_alejki, numer_miejsca)
 );
 
 --14.TABELKA ZAMÓWIENIE
@@ -126,6 +130,7 @@ CREATE TABLE zamowienie_materialu (
 --16.TABELKA ZAMÓWIONY_TYP_PRODUKTU
 CREATE TABLE zamowiony_typ_produktu (
     ilosc                       NUMBER(10) NOT NULL,
-    nazwa_produktu              VARCHAR2(50) REFERENCES produkt(nazwa_produktu) PRIMARY KEY,
-    numer_zamowienia            NUMBER(10) REFERENCES zamowienie(numer_zamowienia) PRIMARY KEY
+    nazwa_produktu              VARCHAR2(50) REFERENCES produkt(nazwa_produktu),
+    numer_zamowienia            NUMBER(10) REFERENCES zamowienie(numer_zamowienia),
+	CONSTRAINT pKeyZamTypProd PRIMARY KEY(numer_zamowienia, nazwa_produktu)
 );
