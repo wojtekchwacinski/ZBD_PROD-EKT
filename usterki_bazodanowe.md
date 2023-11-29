@@ -1,6 +1,6 @@
 #### funkcje 
  - [x] oblicznie wartosci dodadku po starzu pracy 
- - [ ] obliczanie całkowitego kosztu produkcji 
+ - [x] obliczanie całkowitego kosztu produkcji 
 
 #### sekwencje
  - [x] sekwencje do numeru zamówienia do i od nas (dwie sekwencje) 
