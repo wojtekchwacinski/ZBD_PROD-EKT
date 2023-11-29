@@ -1,9 +1,9 @@
 funkcje 
-oblicznie wartosci dodadku po starzu pracy 
+oblicznie wartosci dodadku po starzu pracy x
 obliczanie całkowitego kosztu produkcji 
 
 sekwencje
-sekwencje do numeru zamówienia do i od nas (dwie sekwencje) 
+sekwencje do numeru zamówienia do i od nas (dwie sekwencje) x
 numerów lini produkcyjnych 
 sekwencje do miesc w magazynie 
 
@@ -12,4 +12,4 @@ złożenia zamówienia
 dodania nowego produktu 
 
 
-napisać ddl 
+napisać ddl x
