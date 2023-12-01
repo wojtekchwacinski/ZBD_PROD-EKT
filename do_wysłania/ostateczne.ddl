@@ -160,8 +160,10 @@ BEGIN
    
 END obliczDodatek;
 
+
 CREATE OR REPLACE FUNCTION obliczKosztProdukcji(nazwa_produktu_param VARCHAR2) RETURN NUMBER IS
     koszt_produkcji NUMBER(15, 2) := 0;
+    produkcja number(10, 2) := 0;
 
 BEGIN
   
@@ -172,22 +174,22 @@ BEGIN
     LOOP
         koszt_produkcji := koszt_produkcji + (r.ilosc_materialu * r.cena_zakupu_materialu);
     END LOOP;
+    select cena_produkcji into produkcja from produkt where produkt.NAZWA_PRODUKTU = nazwa_produktu_param;
         --doliczam robocizne do tego mebelka 
-        koszt_produkcji := koszt_produkcji * 1.2;
-    EXCEPTION
-        WHEN NO_DATA_FOUND THEN
-            
-            DBMS_OUTPUT.PUT_LINE('Brak danych dla produktu o nazwie ' || nazwa_produktu_param);
-            RETURN NULL;
-        WHEN OTHERS THEN
-            
-            DBMS_OUTPUT.PUT_LINE('Wystąpił błąd: ' || SQLERRM);
-            RETURN NULL;
-    
-    
-
+    koszt_produkcji := koszt_produkcji + produkcja;
     RETURN koszt_produkcji;
+
+    EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        -- Obsługa sytuacji, gdy nie znaleziono danych dla danego pracownika
+        DBMS_OUTPUT.PUT_LINE('Brak produktu ' || nazwa_produktu_param);
+        RETURN NULL;
+    WHEN OTHERS THEN
+        -- Obsługa innych błędów
+        DBMS_OUTPUT.PUT_LINE('Wystąpił błąd: ' || SQLERRM);
+        RETURN NULL;
 END;
+
 
 --sekwencje
 
