@@ -144,28 +144,14 @@ CREATE OR REPLACE FUNCTION obliczDodatek(PeselParam VARCHAR2) RETURN NUMBER IS
     nazwa_st VARCHAR2(50);
 
 BEGIN
-    BEGIN
-        SELECT data_zatrudnienia INTO data_zatrudnienia FROM Pracownik WHERE Pesel = PeselParam;
-        SELECT nazwa_stanowiska INTO nazwa_st FROM pracownik WHERE Pesel = PeselParam;
-    EXCEPTION
-        WHEN NO_DATA_FOUND THEN
-            RAISE_APPLICATION_ERROR(-20001, 'No data found for Pesel: ' || PeselParam);
-    END;
-
+    
+    SELECT data_zatrudnienia INTO data_zatrudnienia FROM Pracownik WHERE Pesel = PeselParam;
+    SELECT nazwa_stanowiska INTO nazwa_st FROM pracownik WHERE Pesel = PeselParam;
     dzis := SYSDATE;
-
-    BEGIN
-        SELECT placa_dodatkowa INTO dodatek FROM STANOWISKO WHERE nazwa = nazwa_st;
-    EXCEPTION
-        WHEN NO_DATA_FOUND THEN
-            RAISE_APPLICATION_ERROR(-20002, 'No data found for stanowisko: ' || nazwa_st);
-    END;
-
+    SELECT placa_dodatkowa INTO dodatek FROM STANOWISKO WHERE nazwa = nazwa_st;
     lata_pracy := EXTRACT(YEAR FROM dzis) - EXTRACT(YEAR FROM data_zatrudnienia);
     RETURN lata_pracy * dodatek;
-EXCEPTION
-    WHEN OTHERS THEN
-        RAISE_APPLICATION_ERROR(-20000, 'An error occurred in obliczDodatek: ' || SQLERRM);
+
 END obliczDodatek;
 
 
@@ -182,20 +168,15 @@ BEGIN
         koszt_produkcji := koszt_produkcji + (r.ilosc_materialu * r.cena_zakupu_materialu);
     END LOOP;
 
-    BEGIN
-        SELECT cena_produkcji INTO produkcja FROM produkt WHERE produkt.NAZWA_PRODUKTU = nazwa_produktu_param;
-    EXCEPTION
-        WHEN NO_DATA_FOUND THEN
-            RAISE_APPLICATION_ERROR(-20003, 'No data found for produkt: ' || nazwa_produktu_param);
-    END;
+
+    SELECT cena_produkcji INTO produkcja FROM produkt WHERE produkt.NAZWA_PRODUKTU = nazwa_produktu_param;
+
 
     -- Doliczam robociznę do tego mebla
     koszt_produkcji := koszt_produkcji + produkcja;
 
     RETURN koszt_produkcji;
-EXCEPTION
-    WHEN OTHERS THEN
-        RAISE_APPLICATION_ERROR(-20000, 'An error occurred in obliczKosztProdukcji: ' || SQLERRM);
+
 END obliczKosztProdukcji;
 
 
