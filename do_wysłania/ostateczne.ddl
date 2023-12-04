@@ -94,7 +94,8 @@ CREATE TABLE wymagany_material (
     ilosc_materialu          NUMBER(5) NOT NULL,
     nazwa_materialu          VARCHAR2(50) REFERENCES material(nazwa_materialu),
     nazwa_produktu           VARCHAR2(50) REFERENCES produkt(nazwa_produktu),
-	CONSTRAINT pKeyWymMater PRIMARY KEY(nazwa_produktu, nazwa_materialu)
+	CONSTRAINT pKeyWymMater PRIMARY KEY(nazwa_produktu, nazwa_materialu),
+	CONSTRAINT fk_zajete_miejsce_magazyn FOREIGN KEY (numer_alejki, numer_miejsca) REFERENCES miejsce_w_magazynie(numer_alejki, numer_miejsca)
 );
 
 
@@ -141,32 +142,38 @@ CREATE OR REPLACE FUNCTION obliczDodatek(PeselParam VARCHAR2) RETURN NUMBER IS
     lata_pracy NUMBER;
     dodatek NUMBER;
     nazwa_st VARCHAR2(50);
+
 BEGIN
-    SELECT data_zatrudnienia INTO data_zatrudnienia FROM Pracownik WHERE Pesel = PeselParam;
-    select nazwa_stanowiska into nazwa_st from pracownik where Pesel = PeselParam;
+    BEGIN
+        SELECT data_zatrudnienia INTO data_zatrudnienia FROM Pracownik WHERE Pesel = PeselParam;
+        SELECT nazwa_stanowiska INTO nazwa_st FROM pracownik WHERE Pesel = PeselParam;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            RAISE_APPLICATION_ERROR(-20001, 'No data found for Pesel: ' || PeselParam);
+    END;
+
     dzis := SYSDATE;
-    SELECT placa_dodatkowa into dodatek from STANOWISKO where nazwa = nazwa_st;
+
+    BEGIN
+        SELECT placa_dodatkowa INTO dodatek FROM STANOWISKO WHERE nazwa = nazwa_st;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            RAISE_APPLICATION_ERROR(-20002, 'No data found for stanowisko: ' || nazwa_st);
+    END;
+
     lata_pracy := EXTRACT(YEAR FROM dzis) - EXTRACT(YEAR FROM data_zatrudnienia);
     RETURN lata_pracy * dodatek;
-    EXCEPTION
-    WHEN NO_DATA_FOUND THEN
-        -- Obsługa sytuacji, gdy nie znaleziono danych dla danego pracownika
-        DBMS_OUTPUT.PUT_LINE('Brak danych dla pracownika o PESEL ' || PeselParam);
-        RETURN NULL;
+EXCEPTION
     WHEN OTHERS THEN
-        -- Obsługa innych błędów
-        DBMS_OUTPUT.PUT_LINE('Wystąpił błąd: ' || SQLERRM);
-        RETURN NULL;
-   
+        RAISE_APPLICATION_ERROR(-20000, 'An error occurred in obliczDodatek: ' || SQLERRM);
 END obliczDodatek;
 
 
 CREATE OR REPLACE FUNCTION obliczKosztProdukcji(nazwa_produktu_param VARCHAR2) RETURN NUMBER IS
     koszt_produkcji NUMBER(15, 2) := 0;
-    produkcja number(10, 2) := 0;
+    produkcja NUMBER(10, 2) := 0;
 
 BEGIN
-  
     FOR r IN (SELECT wm.ilosc_materialu, m.cena_zakupu_materialu
               FROM wymagany_material wm
               JOIN ZAMOWIENIE_MATERIALU m ON wm.nazwa_materialu = m.nazwa_materialu
@@ -174,21 +181,22 @@ BEGIN
     LOOP
         koszt_produkcji := koszt_produkcji + (r.ilosc_materialu * r.cena_zakupu_materialu);
     END LOOP;
-    select cena_produkcji into produkcja from produkt where produkt.NAZWA_PRODUKTU = nazwa_produktu_param;
-        --doliczam robocizne do tego mebelka 
-    koszt_produkcji := koszt_produkcji + produkcja;
-    RETURN koszt_produkcji;
 
+    BEGIN
+        SELECT cena_produkcji INTO produkcja FROM produkt WHERE produkt.NAZWA_PRODUKTU = nazwa_produktu_param;
     EXCEPTION
-    WHEN NO_DATA_FOUND THEN
-        -- Obsługa sytuacji, gdy nie znaleziono danych dla danego pracownika
-        DBMS_OUTPUT.PUT_LINE('Brak produktu ' || nazwa_produktu_param);
-        RETURN NULL;
+        WHEN NO_DATA_FOUND THEN
+            RAISE_APPLICATION_ERROR(-20003, 'No data found for produkt: ' || nazwa_produktu_param);
+    END;
+
+    -- Doliczam robociznę do tego mebla
+    koszt_produkcji := koszt_produkcji + produkcja;
+
+    RETURN koszt_produkcji;
+EXCEPTION
     WHEN OTHERS THEN
-        -- Obsługa innych błędów
-        DBMS_OUTPUT.PUT_LINE('Wystąpił błąd: ' || SQLERRM);
-        RETURN NULL;
-END;
+        RAISE_APPLICATION_ERROR(-20000, 'An error occurred in obliczKosztProdukcji: ' || SQLERRM);
+END obliczKosztProdukcji;
 
 
 --sekwencje
